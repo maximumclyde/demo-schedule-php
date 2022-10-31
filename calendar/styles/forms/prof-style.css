@@ -1,0 +1,63 @@
+#prof-register-container{
+    background-color: #fff;
+    height: fit-content;
+    width: fit-content;
+    min-height: 100px;
+    min-width: 400px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    left: 30.25%;
+    top: 10.25%;
+    z-index: 2;
+}
+
+#prof-register-form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#prof-title-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+#prof-title{
+    outline: none;
+    font-size: 18px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+    transition: border-bottom 0.2s ease;
+}
+
+#prof-title:focus{
+    border-bottom: 2.5px solid black;
+}
+
+#prof-name{
+    width: 200px;
+}
+
+#prof-title{
+    width: 100px;
+}
+
+#prof-submit-button-row{
+    margin-top: 20px;
+}

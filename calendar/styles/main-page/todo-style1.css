@@ -1,0 +1,108 @@
+.todo-container{
+    height: 90vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background-color: inherit;
+    box-shadow: 0 0 3px 2px var(--color-rose);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.todo-title{
+    height: 8.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+#add-event-button{
+    position: absolute;
+    left: 92%;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.2s font-size ease, 0.2s left ease;
+}
+
+#add-event-button:hover{
+    font-size: 40px;
+    left: 91.7%;
+    cursor: pointer;
+}
+
+
+#to-do-title{
+    font-size: 23px;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+.todo-list{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.todo-list-item{
+    min-height: 100px;
+    /*width: 95%;
+    border-radius: 10px;*/
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s box-shadow ease;
+}
+
+.todo-list-item:hover{
+    border: 0;
+    box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.list-item-body{
+    height: 100%;
+    width: calc(100% - 15px);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.list-item-title{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+#list-item-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-item-content{
+    height: 100%;
+    width: 94%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 0.5%;
+}

@@ -1,0 +1,272 @@
+.calendar-container{
+    position: absolute;
+    height: 90vh;
+    width: 69.7%;
+    bottom: 0;
+    left: 30.3%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.calendar{
+    height: 99%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    /*box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px;*/
+    
+}
+
+/*
+
+THIS IS THE CALENDAR HEAD
+
+*/
+
+.c-head{
+    width: 100%;
+    height: 12%;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /*border-bottom: 1px solid black;*/
+}
+
+/*
+THESE ARE THE BUTTON DESIGNS
+*/
+.c-button{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-btn-left{
+    margin-left: 7%;
+}
+
+#c-btn-right{
+    margin-right: 7%;
+}
+
+.arrow{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.1s font-size ease;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    font-size: 30px;
+}
+
+button{
+    background-color: inherit;
+    color:white;
+    border:0;
+}
+
+/*
+THIS IS THE MONTH NAME
+*/
+.c-month{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    overflow: hidden;
+}
+
+.cm-head{
+    font-weight: bold;
+    font-size: 23px;
+    overflow: hidden;
+}
+#month-name{
+    letter-spacing: 1.2px;
+    background-color: inherit;
+    cursor: default;
+}
+
+#year-displayed{
+    letter-spacing: 1.2px;
+    background-color: inherit;
+    cursor: default;
+}
+
+.cm-date{
+    margin-top: 6px;
+    font-size: 14px;
+    cursor: default;
+    overflow: hidden;
+}
+
+
+/*
+
+THIS IS THE CALENDAR BODY
+
+*/
+
+.c-body{
+    width: 100%;
+    height: 88%;
+    background-color: #fff6ff11;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+/*
+THE DAY NAMES
+*/
+.day-names{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    letter-spacing: 1.5px;
+    background-color: var(--color-white2);
+    overflow: hidden;
+}
+
+.day{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: calc(100% / 7);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 13px;
+    border-collapse: collapse;
+    font-weight: bold;
+    cursor: default;
+}
+
+/*
+
+#monday{
+    border-left: 2px solid black;
+}
+
+#sunday{
+    border-right: 2px solid black;
+}
+*/
+
+#monday{
+    border-left: 0px solid rgba(0, 0, 0, 0);
+}
+
+
+
+/*
+THE ACTUAL DATES
+*/
+
+.day-dates{
+    width: 100%;
+    height: 95%;
+    background-color: inherit;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    cursor: default;
+    overflow: hidden;
+}
+
+.date{
+    width: calc(100% / 7 - 1px);
+    height: calc(100% / 6 - 1.5px);
+    border: 1px solid inherit;
+    box-shadow: inset 0 0 5px 0px rgba(255, 255, 255, 0.5), 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    margin-right: 1px;
+    transition: 0.15s background-color ease;
+    overflow: hidden;
+}
+
+.this-month{
+    font-weight: bolder;
+}
+
+.date:hover{
+    background-color: rgba(222, 205, 243, 0.5);
+}
+
+.other-month{
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.today{
+    background-color: #ebc6d3af;
+}
+
+/*
+THE CONTENT TABLE DESIGN
+*/
+.activity-table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+th{
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 8%;
+    overflow: hidden;
+}
+
+td{
+    font-size: 10px;
+    padding-left: 2px;
+    color: white;
+    border: 1px solid inherit;
+    background-color: red;
+    font-size: 12px;
+    height: 23%;
+    overflow: hidden;
+}
+
+.green{
+    background-color: var(--color-green);
+}
+
+.purple{
+    background-color: rgba(112, 0, 163, 1);
+}
+
+.no-event{
+    background-color: rgba(255,255,255,0);
+}
+
+.plus-act::before{
+    content: '...';
+    position: relative;
+    top: -25%;
+    left: -75%;
+}

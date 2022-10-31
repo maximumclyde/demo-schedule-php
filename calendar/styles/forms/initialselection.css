@@ -1,0 +1,71 @@
+#register-select-container{
+    background-color: #fff;
+    height: 150px;
+    width: 250px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    /*
+    top: 10vh;
+    left: 40%;*/
+    left: 30.25%;
+    top: 10.25%;
+    z-index: 2;
+}
+
+.register-select-option{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 5px;
+}
+
+.register-select-option:hover{
+    background-color: rgba(255,0,0,0.2);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.register-select-option::after{
+    content: '>';
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#register-select-class::after{
+    position: relative;
+    top: 0;
+    left: 32px;
+}
+
+#register-select-prof::after{
+    position: relative;
+    top: 0;
+    left: 16px;
+}
+
+#register-select-event::after{
+    position: relative;
+    top: 0;
+    left: 30px;
+}
+
+#register-select-lab::after{
+    position: relative;
+    top: 0;
+    left: 40px;
+}
+
+#register-select-lab{
+    border: 0;
+}

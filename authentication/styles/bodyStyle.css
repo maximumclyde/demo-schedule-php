@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --color-white: #fffeff;
+    --color-green: #1b998b;
+    --color-rose: #decdf5;
+    --color-grey: #656176;
+    --color-brown: #381d2a;
+    --color-white2: #f8f1ff;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(222,205,245);
+    background: radial-gradient(circle, rgba(222,205,245,1) 0%, rgba(248,241,255,1) 75%, rgba(255,254,255,1) 100%); 
+}
+

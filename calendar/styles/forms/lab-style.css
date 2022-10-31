@@ -1,0 +1,30 @@
+#register-lab-container{
+    background-color: #fff;
+    height: fit-content;
+    min-width: 400px;
+    width: fit-content;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 90vh;
+    overflow: auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    left: 30.25%;
+    top: 10.25%;
+    z-index: 2;
+}
+
+#register-lab-form{
+    height: fit-content;
+    width: 100%;
+    min-height: 100px;
+    transition: height 0.2s ease;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}

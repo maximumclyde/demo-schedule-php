@@ -1,0 +1,108 @@
+.form-item{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 24px;
+    cursor: default;
+}
+
+.form-label{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-grey);
+    margin-bottom: 10px;
+}
+
+.form-input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    transition: border-bottom 0.1s ease;
+}
+
+.form-input:focus{
+    border-bottom: 2.5px solid rgba(0,0,0,0.5);
+}
+
+.form-input:hover{
+    border-bottom: 2.5px solid rgba(0,0,0,0.5);
+}
+
+.given-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 10%;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.given-name{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#name, #lname{
+    width: 90%;
+}
+
+#login{
+    height: 50px;
+    width: 30%;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: inherit;
+    border: 0.5px solid rgba(255,0,0,0.2);
+    transition: box-shadow 0.2s ease, margin-top 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+#login:hover{
+    margin-top: -5px;
+    color: white;
+    background-color: red;
+    box-shadow: 0 3px 3.5px 2px var(--color-rose);
+    font-size: 16px;
+}
+
+#register{
+    margin-top: 16%;
+    height: 50px;
+    width: 30%;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: inherit;
+    border: 0.5px solid rgba(255,0,0,0.2);
+    transition: box-shadow 0.2s ease, margin-top 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+#register:hover{
+    margin-top: calc(16% - 7px);
+    color: white;
+    background-color: red;
+    box-shadow: 0 3px 3.5px 2px var(--color-rose);
+    font-size: 16px;
+}
